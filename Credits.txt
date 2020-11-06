@@ -1,10 +1,10 @@
-I supported this project by giving advice on how to structure the code, |
-spoecifically, the names of the methods and the organization of the     |
-classes. Besides this, I also took it upon myself to fix smaller issues |
-in the code, for example, when re-structuring files, I would delete the |
-old files and rename the Scanners and Methods so that there would not be|
- any conflicts. Besides this, I was usually on a call with a screenshare|
-running so that I could guide Razr on how to code this small game. I    |
+I supported this project by giving advice on how to structure the code, | I made the game and coded it with the help of Marlon Pasqual Marrero Arancibia, he helped me structure
+spoecifically, the names of the methods and the organization of the     | the code and actually make it work. I made and typed most of the code unless stated otherwise in the code
+classes. Besides this, I also took it upon myself to fix smaller issues | istelf. I was inspired by Final Fantasy 7, things I particularly enjoy about the game is it's attack 
+in the code, for example, when re-structuring files, I would delete the | system, and the games story. Part of the reason I also decided to make Winter Town as a way to better my 
+old files and rename the Scanners and Methods so that there would not be| knowledge of Java and working with more than one person in the programing feild. Marlon was a big help 
+any conflicts. Besides this, I was usually on a call with a screenshare | and taught me not only how to code, but also what the code does. Over all this was a learning exprerience
+running so that I could guide Jonathan on how to code this small game. I| for me and for Marlon. - Jonathan Fernandez
 feel that it would be improper for me to call myself the project        |
 manager, but I did have  a role which would fullful a similar function. |
 He worked on it in his free time and I would manager the code structure |
