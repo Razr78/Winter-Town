@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2aa728e0-e197-4c5b-9a82-0f476915da9b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jsduT9iRZDFdpEJ8FrxTENFSd1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="WinterTownMain" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WinterTownMain" />
+      <module name="Game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="RazrCraftGame" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aa728e0-e197-4c5b-9a82-0f476915da9b" name="Default Changelist" comment="" />
+      <created>1604596955873</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604596955873</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="114" key="#Project_Structure" timestamp="1604677202056">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1604677202056" />
+    <state x="476" y="197" width="1092" height="883" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604628021923">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="476" y="197" width="1092" height="883" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1604628021923" />
+    <state x="689" y="329" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604628020249">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="689" y="329" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1604628020249" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1604689695501">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1604689695501" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1604689695501">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1604689695501" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1604689695500">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1604689695500" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1604689695501">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1604689695501" />
+  </component>
+</project>
