@@ -1,3 +1,5 @@
+// Metric support added by Marlon Pascual Marrero Arancibia
+// Confirmation added by Marlon Pascual Marrero Arancibia
 import java.util.Scanner;
 public class CharacterCreationTool
 {
@@ -51,7 +53,7 @@ public class CharacterCreationTool
         }
     }
 
-    public static int weightCustomization()
+    public static int imperialWeightCustomization()
     {
         int weight;
 
@@ -64,11 +66,31 @@ public class CharacterCreationTool
         return weight;
     }
 
-    public static int heightCustomization()
+    public int metricWeightCustomization()
+    {
+        int weight;
+
+        Scanner userResponse = new Scanner(System.in);
+
+        System.out.println("Please enter your weight (in kilos) ::");
+        weight = userResponse.nextInt();
+
+        return weight;
+    }
+
+    public static int imperialHeightCustomization()
     {
         Scanner userResponse = new Scanner(System.in);
 
         System.out.println("Please enter your height in inches:");
+        return userResponse.nextInt();
+    }
+
+    public int metricHeightCustomization()
+    {
+        Scanner userResponse = new Scanner(System.in);
+
+        System.out.println("Please enter your height in centimeters:");
         return userResponse.nextInt();
     }
 
@@ -104,12 +126,14 @@ public class CharacterCreationTool
                 return true;
             } else {
                 System.out.println("Try again.");
-                weight = weightCustomization(); // Checks added by Marlon
-                height = heightCustomization();
+                weight = imperialWeightCustomization();
+                height = imperialHeightCustomization();
                 hair = hairStyleCustomization();
                 clothes = clothesCustomization();
                 skin = skinColorCustomization();
             }
         } while (true);
     }
+
+
 }

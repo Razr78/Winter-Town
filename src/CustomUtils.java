@@ -1,4 +1,4 @@
-// CustomUtils.java was written independently by Marlon Pascual Marrero Arancibia.
+// CustomUtils.java was fully written by Marlon Pascual Marrero Arancibia
 
 import java.util.Scanner;
 
