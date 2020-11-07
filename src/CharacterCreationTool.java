@@ -1,82 +1,87 @@
 import java.util.Scanner;
 public class CharacterCreationTool
 {
-        public static void characterSetting(String response)
+    public boolean customize()
+    // Coded by Marlon Pascual Marrero Arancibia
+    {
+        Scanner userResponse = new Scanner(System.in);
+        CustomUtils CU= new CustomUtils();
+
+        do {
+            System.out.println("Do you want to customize your character? (Yes or No) \n" +
+                                "If you choose not to, you'll have a default character assigned.");
+
+           switch (CU.yesNoCheck(userResponse.next())) {
+               case 0:
+                   return true;
+               case 1:
+                   return false;
+               case 2:
+                   System.out.println("Try again");
+           }
+
+        } while (true);
+    }
+
+    public String nameCustomization()
+    {
+        String response, nameAnswer;
+        Scanner keyboard = new Scanner(System.in);
+        CustomUtils CU= new CustomUtils();
+
+        System.out.println("Enter your name ::");
+        nameAnswer = keyboard.next();
+
+        return nameAnswer;
+        /* We don't do a check here to make sure that the player is happy with the Name they chose because I want to
+         * one huge check at the end of the set up like this:
+         * Is this correct?
+         * Name: Placeholder
+         * weight: 0
+         * height: 0 ft, 0 inches or 0cm
+         * etc.
+         */
+    }
+
+    public static void characterSetting(String response)
+    {
+        if (!response.contains("."))
         {
-            if (!response.contains(".")) {
-                Scanner keyboard = new Scanner(System.in);
 
-                BodyCustomization BC = new BodyCustomization();
-
-                System.out.println("Welcome to the Character Customization Menu");
-                System.out.println(" ");
-                System.out.println("Would you like to change your body type?");
-                System.out.println("YES or NO ::");
-                response = keyboard.next();
-                response = response.toUpperCase();
-
-                if (response.contains("YES"))
-                {
-                    BC.weightCustomization();
-                }
-            }
         }
+    }
 
-        public static class BodyCustomization
-        {
-            public String nameCustomization()
-            {
-                String response;
+    public static int weightCustomization()
+    {
+        int weight;
 
-                Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
-                do {
-                    System.out.println("Sate your name ::");
-                    response = keyboard.next();
-
-                    System.out.println("Are you sure you want to be called " + response + "?");
-
-                    System.out.println("YES or NO ::");
-                    userInput = keyboard.next();
-                    userInput = userInput.toUpperCase();
-
-                    if (userInput.contains("YES"))
-                    {
-                        return response;
-                    } else if (userInput.contains("NO")) {System.out.println("Sorry, try again then");}
-                    else {System.out.println("Unrecognized userInput, try again");}
-
-                } while (!userInput.contains("YES"));
-
-                return "";
-            }
-            
-            public int weightCustomization()
-            {
-                int weight;
-
-                Scanner keyboard = new Scanner(System.in);
-
-                System.out.println("Please select your weight (in pounds) ::");
-                weight = keyboard.nextInt();
+        System.out.println("Please enter your weight (in pounds) ::");
+        weight = keyboard.nextInt();
 
 
-                return weight;
-            }
+        return weight;
+    }
 
-            public static void hairStyleCustomization() 
-            {
+    public static int heightCustomization()
+    {
+        return 168;
+    }
 
-            }
+    public static String hairStyleCustomization()
+    {
+        return "Casual";
+    }
 
-            public static void clothesCustomization() 
-            {
+    public static String clothesCustomization()
+    {
+        return "Formal";
+    }
 
-            }
+    public static String skinColorCustomization()
+    {
+        return "White";
+    }
 
-            public static void skinColorCustomization() 
-            {
-
-            }
-        }
 }
