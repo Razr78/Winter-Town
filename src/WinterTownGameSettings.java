@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class WinterTownGameSettings
 {
-    public String Units()
+    public byte Units()
     {
         Scanner userResponse = new Scanner(System.in);
 
@@ -14,9 +14,9 @@ public class WinterTownGameSettings
             switch (userResponse.nextInt())
             {
                 case 0:
-                    return "Imperial";
+                    return 0;
                 case 1:
-                    return "Metric";
+                    return 1;
                 default:
                     System.out.println("Try again");
             }

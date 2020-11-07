@@ -3,6 +3,11 @@ public class WinterTownGameLauncher
 {
         private static String response;
 
+        public void open() {
+                System.out.println("Game launched");
+                System.exit(69);
+        }
+
         /*public static void setupSettings()
         {
                 Scanner keyboard = new Scanner(System.in);

@@ -20,12 +20,12 @@ public class CustomUtils {
 
     public boolean confirm(String confirm)
     {
-        Scanner response = new Scanner(System.in);
+        Scanner userResponse = new Scanner(System.in);
 
         do {
             System.out.print("Are you sure you want to select " + confirm + "?");
 
-            switch (yesNoCheck(response.next())) {
+            switch (yesNoCheck(userResponse.next())) {
                 case 0:
                     return true;
                 case 1:
@@ -37,8 +37,9 @@ public class CustomUtils {
         // We use while true because return statements will make the method stop running automatically regardless.
     }
 }
-/*for (int i = 0; i<confirm.length; i++) {
-                System.out.print(" " + confirm[i]);
-            }"?");
 
+    /*for (int i = 0; i<confirm.length; i++)
+    {
+        System.out.print(" " + confirm[i]);}
+        ?");
  */

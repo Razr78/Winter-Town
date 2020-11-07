@@ -3,34 +3,34 @@ public class CharacterCreationTool
 {
     public boolean customize()
     // Coded by Marlon Pascual Marrero Arancibia
-    {
+    { 
         Scanner userResponse = new Scanner(System.in);
         CustomUtils CU= new CustomUtils();
 
         do {
             System.out.println("Do you want to customize your character? (Yes or No) \n" +
-                                "If you choose not to, you'll have a default character assigned.");
+                    "If you choose not to, you'll have a default character assigned.");
 
-           switch (CU.yesNoCheck(userResponse.next())) {
-               case 0:
-                   return true;
-               case 1:
-                   return false;
-               case 2:
-                   System.out.println("Try again");
-           }
+            switch (CU.yesNoCheck(userResponse.next())) {
+                case 0:
+                    return true;
+                case 1:
+                    return false;
+                case 2:
+                    System.out.println("Try again");
+            }
 
         } while (true);
     }
-
+    
     public String nameCustomization()
     {
         String response, nameAnswer;
-        Scanner keyboard = new Scanner(System.in);
+        Scanner userResponse = new Scanner(System.in);
         CustomUtils CU= new CustomUtils();
 
         System.out.println("Enter your name ::");
-        nameAnswer = keyboard.next();
+        nameAnswer = userResponse.next();
 
         return nameAnswer;
         /* We don't do a check here to make sure that the player is happy with the Name they chose because I want to
@@ -55,10 +55,10 @@ public class CharacterCreationTool
     {
         int weight;
 
-        Scanner keyboard = new Scanner(System.in);
+        Scanner userResponse = new Scanner(System.in);
 
         System.out.println("Please enter your weight (in pounds) ::");
-        weight = keyboard.nextInt();
+        weight = userResponse.nextInt();
 
 
         return weight;
@@ -66,7 +66,10 @@ public class CharacterCreationTool
 
     public static int heightCustomization()
     {
-        return 168;
+        Scanner userResponse = new Scanner(System.in);
+
+        System.out.println("Please enter your height in inches:");
+        return userResponse.nextInt();
     }
 
     public static String hairStyleCustomization()
@@ -84,4 +87,29 @@ public class CharacterCreationTool
         return "White";
     }
 
+    public boolean confirm(String playerName, int weight, int height, String hair, String clothes, String skin)
+    // Coded by Marlon Pascual Marrero Arancibia
+    {
+        CustomUtils CU = new CustomUtils();
+        do {
+            System.out.println("Is this correct? \n" +
+                    "Name is: " + playerName + "\n" +
+                    "Weight is: " + weight + "\n" +
+                    "Height is: " + height + "\n" +
+                    "Hair is: " + hair + "\n" +
+                    "Clothes is: " + clothes + "\n" +
+                    "Skin is: " + skin);
+
+            if (CU.confirm("the above")) {
+                return true;
+            } else {
+                System.out.println("Try again.");
+                weight = weightCustomization(); // Checks added by Marlon
+                height = heightCustomization();
+                hair = hairStyleCustomization();
+                clothes = clothesCustomization();
+                skin = skinColorCustomization();
+            }
+        } while (true);
+    }
 }

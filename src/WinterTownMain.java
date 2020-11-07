@@ -6,21 +6,36 @@ public class WinterTownMain
         int weight, height;
 
         WinterTownGameSettings WTGS = new WinterTownGameSettings();
-        //WinterTownGameLauncher WTGL = new WinterTownGameLauncher();
+        WinterTownGameLauncher WTGL = new WinterTownGameLauncher();
         CharacterCreationTool CCT = new CharacterCreationTool();
 
         boolean customize = CCT.customize();
-        if (customize) {
-            playerName = CCT.nameCustomization();
-            weight = CCT.weightCustomization(); // Lines 14 - 18 added by Marlon
-            height = CCT.heightCustomization();
-            hair = CCT.hairStyleCustomization();
-            clothes = CCT.clothesCustomization();
-            skin = CCT.skinColorCustomization();
-        } else { playerName = "Placeholder"; }
+        boolean launch;
 
-        //WTG.setupSettings();
-
-        System.out.println("~~ WELCOME TO WINTER TOWN " + playerName.toUpperCase() + " ~~");
+        if (WTGS.Units() == 0)
+        {
+            while ( true ) {
+                if (customize)
+                {
+                    playerName = CCT.nameCustomization();
+                    weight = CCT.weightCustomization(); // Lines 14 - 18 added by Marlon
+                    height = CCT.heightCustomization();
+                    hair = CCT.hairStyleCustomization();
+                    clothes = CCT.clothesCustomization();
+                    skin = CCT.skinColorCustomization();
+                } else {
+                    playerName = "Placeholder";
+                    weight = 100;
+                    height = 500;
+                    hair = "Black";
+                    clothes = "Formal";
+                    skin = "Caucasian";
+                }
+                launch = CCT.confirm(playerName, weight, height, hair, clothes, skin);
+                if (launch) {
+                    WTGL.open();
+                }
+            }
+        }
     }
 }
