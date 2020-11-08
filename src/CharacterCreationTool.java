@@ -35,13 +35,15 @@ public class CharacterCreationTool
         nameAnswer = userResponse.next();
 
         return nameAnswer;
-        /* We don't do a check here to make sure that the player is happy with the Name they chose because I want to
+        /* We don't do a check here to make sure that the player is happy with the Name they chose because I want to do
          * one huge check at the end of the set up like this:
          * Is this correct?
          * Name: Placeholder
          * weight: 0
          * height: 0 ft, 0 inches or 0cm
          * etc.
+         * ------------------------------------------------
+         * Its Jonathan talking and you're an absolute genius.
          */
     }
 
@@ -82,7 +84,7 @@ public class CharacterCreationTool
     {
         Scanner userResponse = new Scanner(System.in);
 
-        System.out.println("Please enter your height in inches:");
+        System.out.println("Please enter your height in inches::");
         return userResponse.nextInt();
     }
 
@@ -90,13 +92,30 @@ public class CharacterCreationTool
     {
         Scanner userResponse = new Scanner(System.in);
 
-        System.out.println("Please enter your height in centimeters:");
+        System.out.println("Please enter your height in centimeters::");
         return userResponse.nextInt();
     }
 
     public static String hairStyleCustomization()
     {
-        return "Casual";
+        String userResponse = (""), hairstyleBlank = ("");
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Please choose a hair style::"
+        + "Hairstyle 1\n"
+        + "Hairstyle 2\n"
+        + "Hairstyle 3\n"
+        + "Hairstyle 4\n"
+        + "Hairstyle 5\n" );
+
+        userResponse = keyboard.nextLine();
+
+        if (userResponse.contains("YES"))
+        {
+            return "Hairstyle 1";
+        }
+        
+        return userResponse;
     }
 
     public static String clothesCustomization()
@@ -111,6 +130,7 @@ public class CharacterCreationTool
 
     public boolean confirm(String playerName, int weight, int height, String hair, String clothes, String skin)
     // Coded by Marlon Pascual Marrero Arancibia
+    // Formatted by Jonathan Fernandez
     {
         CustomUtils CU = new CustomUtils();
         do {
@@ -124,7 +144,8 @@ public class CharacterCreationTool
 
             if (CU.confirm("the above")) {
                 return true;
-            } else {
+            }
+            else {
                 System.out.println("Try again.");
                 weight = imperialWeightCustomization();
                 height = imperialHeightCustomization();
@@ -134,6 +155,4 @@ public class CharacterCreationTool
             }
         } while (true);
     }
-
-
 }

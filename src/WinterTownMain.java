@@ -21,6 +21,7 @@ public class WinterTownMain
                     {
                         weight = CCT.imperialWeightCustomization();
                         height = CCT.imperialHeightCustomization();
+
                     } else {
                         weight = CCT.metricWeightCustomization();
                         height = CCT.metricHeightCustomization();
@@ -28,16 +29,18 @@ public class WinterTownMain
                     hair = CCT.hairStyleCustomization();
                     clothes = CCT.clothesCustomization();
                     skin = CCT.skinColorCustomization();
+
             } else
             {
                 playerName = "Placeholder";
-                weight = 100;
-                height = 500;
+                weight = 150;
+                height = 72;
                 hair = "Black";
                 clothes = "Formal";
                 skin = "Caucasian";
             }
                 launch = CCT.confirm(playerName, weight, height, hair, clothes, skin);
+
                 if (launch) {
                     WTGL.open();
                 }
