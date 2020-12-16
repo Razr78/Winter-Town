@@ -5,3 +5,5 @@ Winter Town is an RPG that takes place in a small rural town miles out of the bi
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 I hope you like it feel free to send any tips and tricks i can use to make the game better. Im always open to constructive critism. 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(edit: This project has been closed for the time remaining i want to switch over the c++ instead of java)
