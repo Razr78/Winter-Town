@@ -1,6 +1,7 @@
 # Winter-Town
 
 (edit: This project has been closed for the time being i want to switch over the c++ instead of java)
+(edit: This project has been fully discontinued as i want to make this a 2d game instead od a command line game)
 
 Winter Town is my first game that I coded on my own, with the assistance of Marlon Pascual Marrero Arancibia. I coded everything, unless stated otherwise but Marlon taught me most of the methods and algorithms used.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
